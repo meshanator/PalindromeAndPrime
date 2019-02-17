@@ -4,7 +4,6 @@ using namespace std;
 
 bool isPalindrome(int n){
     string s = to_string(n);
-    cout << "midpoint: " << s.length()/2 << endl;
 
     int counterFromRightSide = s.length() - 1;
     for (int i = 0; i < s.length()/2; i++){
@@ -13,28 +12,24 @@ bool isPalindrome(int n){
         counterFromRightSide--;
     }
     return true;
-
 }
 
 bool isPrime(int n){
     for (int i = 2; i < n; i ++){
         if(n%i == 0)
             return false;
-
     }
     return true;
 }
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-
     int n = 119811;
 
-    bool ip = isPalindrome(n);
-    cout << "is palindrome: " << ip << endl;
+    bool isPal = isPalindrome(n);
+    cout << "Is palindrome: " << isPal << endl;
 
-    bool isp = isPrime(1);
-    cout << "isprime: " << isp << endl;
+    bool isPrim = isPrime(1);
+    cout << "Is prime: " << isPrim << endl;
 
     return 0;
 }
