@@ -23,12 +23,12 @@ bool isPrime(int n){
 }
 
 int main() {
-    int n = 119811;
+    int n = 11911;
 
     bool isPal = isPalindrome(n);
     cout << "Is palindrome: " << isPal << endl;
 
-    bool isPrim = isPrime(1);
+    bool isPrim = isPrime(n);
     cout << "Is prime: " << isPrim << endl;
 
     return 0;
